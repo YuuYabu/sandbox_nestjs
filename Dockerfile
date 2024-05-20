@@ -7,7 +7,7 @@ RUN npm i -g @nestjs/cli
 USER node
 WORKDIR /home/node/app
 
-COPY --chown=node:node ./backend .
+COPY --chown=node:node . .
 
 RUN npm install
 

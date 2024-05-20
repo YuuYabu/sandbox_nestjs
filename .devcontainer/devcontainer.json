@@ -1,0 +1,44 @@
+{
+  "name": "nestjs-dev",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "nest",
+  "workspaceFolder": "/home/node/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "christian-kohler.path-intellisense",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "oderwat.indent-rainbow",
+        "formulahendry.auto-rename-tag",
+        "vscode-icons-team.vscode-icons",
+        "MariusAlchimavicius.json-to-ts",
+        "wix.vscode-import-cost",
+        "eamodio.gitlens",
+        "adam-bender.commit-message-editor",
+        "ms-vscode.vscode-typescript-next",
+        "archsense.architecture-view-nestjs"
+      ],
+      "settings": {
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "explicit",
+          "source.fixAll.eslint": "explicit"
+        },
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "files.insertFinalNewline": true
+      }
+    }
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "remoteUser": "node"
+}
