@@ -1,0 +1,10 @@
+services:
+  nest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NODE_VER=20.13.1
+    tty: true
+    volumes:
+      - .:/home/node/app
